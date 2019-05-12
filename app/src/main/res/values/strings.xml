@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Maps</string>
+    <string name="error_message">Something went wrong. Try Again?</string>
+    <string name="yes">yes</string>
+    <string name="search_names">Search names</string>
+	<string name="login">Login</string>
+	<string name="username_hint">Username</string>
+	<string name="password_hint">Password</string>
+	<string name="address">Address</string>
+	<string name="phone">Phone</string>
+</resources>

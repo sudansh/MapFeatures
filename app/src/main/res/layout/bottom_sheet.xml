@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/bottomsheet"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#FFF"
+	android:fitsSystemWindows="true"
+	android:padding="@dimen/default_padding"
+	app:behavior_hideable="true"
+	app:behavior_peekHeight="0dp"
+	app:layout_behavior="@string/bottom_sheet_behavior">
+
+	<TextView
+		android:id="@+id/phoneHeading"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="56dp"
+		android:drawablePadding="@dimen/default_padding"
+		android:drawableStart="@drawable/ic_phone"
+		android:text="@string/phone"
+		android:textStyle="bold"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/phone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="40dp"
+		android:textColor="#000"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/phoneHeading"
+		tools:text="+1234567890" />
+
+	<View
+		android:id="@+id/divider"
+		android:layout_width="0dp"
+		android:layout_height="2dp"
+		android:layout_margin="@dimen/default_padding"
+		android:background="@color/background"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/phone" />
+
+	<TextView
+		android:id="@+id/addressHeading"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/default_padding"
+		android:drawablePadding="@dimen/default_padding"
+		android:drawableStart="@drawable/ic_location"
+		android:text="@string/address"
+		android:textStyle="bold"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/divider" />
+
+	<TextView
+		android:id="@+id/address"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="40dp"
+		android:textColor="#000"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/addressHeading"
+		tools:text="finland" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
